@@ -1,0 +1,70 @@
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#root {
+  background-color: #000000;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.sphere {
+  position: absolute;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  border-radius: 50%;
+  border: 0.25rem solid #ffffff;
+  background-color: transparent;
+  position: absolute;
+}
+
+.semi-circle {
+  width: 3rem;
+  height: 5rem;
+  background-color: transparent;
+  border-top-left-radius: 4.5rem;
+  border-bottom-left-radius: 4.5rem;
+  border: 0.25rem solid #ffffff;
+  border-right: 0;
+  position: absolute;
+  top: calc(50% - 2.75rem);
+  left: calc(50% - 2.76rem);
+}
+
+.circle-zero {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+.ray-top {
+  background-color: #ffffff;
+  height: 0.25rem;
+  position: absolute;
+  top: calc(50% - 2.75rem);
+  left: 50%;
+  width: 50%;
+  z-index: 2;
+}
+
+.ray-bottom {
+  background-color: #ffffff;
+  height: 0.25rem;
+  position: absolute;
+  top: calc(50% + 2.5rem);
+  left: 50%;
+  width: 50%;
+  z-index: 2;
+}
